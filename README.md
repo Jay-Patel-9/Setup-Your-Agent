@@ -33,26 +33,20 @@ A self-contained GitHub wiki covering installation, configuration, memory setup,
 curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
 
 # 2. Configure provider
-hermes config set provider openrouter
-hermes config set model glm-5.1
+hermes config setup model #interactive
 
-# 3. Connect Telegram
-hermes setup telegram
+# 3. Connect
+hermes setup 
 
-# 4. Install Mnemosyne (persistent memory)
-pip install mnemosyne-memory fastembed
-python -m mnemosyne.install
-hermes gateway restart
-
-# 5. Install security skills
+# 4. Install security skills [Example Skills]
 hermes skills install ctf-web-audit
 hermes skills install web-app-auth-bypass
 hermes skills install vite-spa-api-extraction
 
-# 6. Personalize SOUL.md
+# 5. Personalize SOUL.md
 cp 02-Configuration/soul-md-template.md ~/.hermes/SOUL.md
 
-# 7. Verify
+# 6. Verify
 hermes doctor
 ```
 
