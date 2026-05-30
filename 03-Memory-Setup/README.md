@@ -53,10 +53,6 @@ HERMES_PY="$HOME/.hermes/hermes-agent/venv/bin/python"
 hermes gateway restart
 ```
 
-**One-liner alternative:**
-```bash
-curl -sSL https://raw.githubusercontent.com/AxDSan/mnemosyne/main/deploy_hermes_provider.sh | bash
-```
 
 ## Configuration
 
