@@ -34,26 +34,6 @@ Session input → Working Memory → (sleep/consolidate) → Episodic Memory
 
 ### Original Reference: https://github.com/AxDSan/mnemosyne/blob/main/docs/hermes-integration.md
 
-```bash
-HERMES_PY="$HOME/.hermes/hermes-agent/venv/bin/python"
-
-# Core package
-"$HERMES_PY" -m pip install --no-cache-dir mnemosyne-memory
-
-# Semantic search (required for vector recall)
-"$HERMES_PY" -m pip install --no-cache-dir fastembed
-
-# Local LLM consolidation (optional but recommended)
-"$HERMES_PY" -m pip install --no-cache-dir ctransformers huggingface-hub
-
-# Register plugin with Hermes
-"$HERMES_PY" -m mnemosyne.install
-
-# Restart gateway to pick up new provider
-hermes gateway restart
-```
-
-
 ## Configuration
 
 ### `~/.hermes/config.yaml`
