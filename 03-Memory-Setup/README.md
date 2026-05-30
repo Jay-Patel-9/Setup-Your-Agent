@@ -32,6 +32,8 @@ Session input → Working Memory → (sleep/consolidate) → Episodic Memory
 
 ## Installation
 
+### Original Reference: https://github.com/AxDSan/mnemosyne/blob/main/docs/hermes-integration.md
+
 ```bash
 HERMES_PY="$HOME/.hermes/hermes-agent/venv/bin/python"
 
